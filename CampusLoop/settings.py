@@ -23,9 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_n()ip6-ex#1w(k0=$%d8q=f#wx1%p#p65%2rj&b567vnto@1)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",           # local dev
+    "127.0.0.1",           # local dev
+    ".railway.app",        # any subdomain on Railway
+    ".onrender.com",       # any subdomain on Render
+    "www.campusLoop.com",  # your custom domain
+    "campusLoop.com",      # root of your custom domain
+]
 
 
 # Application definition
